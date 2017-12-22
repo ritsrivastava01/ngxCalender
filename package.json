@@ -1,6 +1,6 @@
 {
   "name": "ngx-calender",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "MIT",
   "author": "Ritesh Srivastava",
   "repository": {
@@ -11,6 +11,14 @@
   "bugs": {
     "url": "https://github.com/ritsrivastava01/ngxCalender"
   },
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular 2",
+    "angular4",
+    "angular Calender",
+    "angular 2 Calender"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

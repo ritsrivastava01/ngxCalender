@@ -4,10 +4,10 @@
 
 ## Screenshot
 
-<div style="text-align:center"><img src ="https://github.com/ritsrivastava01/ng2calender/blob/master/src/calender.PNG" /></div>
+<div style="text-align:center"><img src ="https://github.com/ritsrivastava01/ngxCalender/blob/master/calender.PNG" /></div>
 
 ## Installation
-npm install ngxCalender --save
+npm install ngx-Calender --save
 
 ## Usage
 ###Import the calendar Module
