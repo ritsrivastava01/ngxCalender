@@ -1,27 +1,58 @@
-# NgxCalender
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
-## Development server
+# Angular based simple plug and play calender
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Screenshot
 
-## Code scaffolding
+<div style="text-align:center"><img src ="https://github.com/ritsrivastava01/ng2calender/blob/master/src/calender.PNG" /></div>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
+npm install ngxCalender --save
 
-## Build
+## Usage
+###Import the calendar Module
+```
+  
+  import { CalenderModule } from 'ngx-Calender';
+  // other imports 
+  
+  @NgModule({
+    imports: [
+      // other imports 
+      CalenderModule
+    ],
+    // ...
+  })
+  export class AppModule {}
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+```
+##Add selector in template file my-component.html
+```
+  
+  <ng-calender (clickDateHandler)="clickHandler()" [showHeader]="true"></ng-calender>
+  Where
+  showHeader : show month and year name in header,default is true
+  clickHandler: clicked handler on date
 
-## Running unit tests
+```
+### Access the variable from calender component
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  Access by it @viewChild() calender: ElementByRef;
+  // then you can access some public variables:
+    currentDate: string;
+    currentDay: string;
+    currentMonth: string;
+    currentYear: number; 
+  
+  ```
+ 
+unit test coming soon. 
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+coming soon.
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+pull request always welcome!!!

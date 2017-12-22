@@ -1,16 +1,26 @@
 {
   "name": "ngx-calender",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
+  "author": "Ritesh Srivastava",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ritsrivastava01/ngxCalender.git"
+  },
+  "homepage": "https://github.com/ritsrivastava01/ngxCalender",
+  "bugs": {
+    "url": "https://github.com/ritsrivastava01/ngxCalender"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "packagr": "ng-packagr -p ng-package.json"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^4.2.4",
     "@angular/common": "^4.2.4",
@@ -22,6 +32,7 @@
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
     "core-js": "^2.4.1",
+    "date-fns": "^1.29.0",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
@@ -41,6 +52,7 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "ng-packagr": "^1.6.0",
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
