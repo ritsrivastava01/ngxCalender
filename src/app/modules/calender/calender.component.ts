@@ -11,7 +11,7 @@ import { format, subDays, getDaysInMonth, startOfMonth, getMonth, parse } from '
 })
 export class CalenderComponent implements OnInit, AfterViewInit {
 
-  @Input() showHeader: boolean = true;
+  @Input() showHeader = true;
   @Output() clickedDate = new EventEmitter<Date>();
   currentDate: string;
   currentMonth: string;
@@ -37,7 +37,7 @@ export class CalenderComponent implements OnInit, AfterViewInit {
     this.currentMonth = format(new Date(), 'MMMM');
     this.currentYear = Number(format(new Date(), 'YYYY'));
     this.currDaysInCurrMonth = getDaysInMonth(new Date());
-    this.currMonthFirstDay = Number(format(startOfMonth(new Date()), 'd'));
+    this.currMonthFirstDay = (Number(format(startOfMonth(new Date()), 'd')) - 1);
   }
 
   ngAfterViewInit() {
@@ -61,12 +61,12 @@ export class CalenderComponent implements OnInit, AfterViewInit {
     } else if (this.count < this.currDaysInCurrMonth) {
       return this.getDate();
     }
-  }
+  };
 
   getDate: () => number = function () {
     this.count++;
     return this.count;
-  }
+  };
 
   clickHandler(evt: Event) {
     if (evt.currentTarget['innerText'] !== '') {

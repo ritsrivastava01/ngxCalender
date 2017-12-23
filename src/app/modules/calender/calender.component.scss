@@ -2,13 +2,14 @@
   display: block;
   background-color: #fff;
   height: 90%;
+  min-width: 300px;
   font-family: sans-serif;
   div{
     display: flex;
     align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 20px;
+    padding: 1rem;
     border-top: 5px solid gray;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
@@ -32,20 +33,20 @@
         display: table-cell;
         text-align: center;
         vertical-align: middle;
-        height: 4rem;
+        padding: .5rem;
         font-weight: bold;
       }
     }
     tr td {
       text-align: center;
       cursor: pointer;
-      height: 4rem;
+
     }
     tr:nth-child(odd) {
       background-color: #f2f2f2;
     }
     .currentDate {
-      border-bottom: 4px solid gray;
+      border-bottom: 2px solid gray;
       font-weight: bold;
 
     }
