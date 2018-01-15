@@ -39,16 +39,16 @@ npm install ngx-calender --save
 ```
 
   Access it like:
-  @ViewChild(NgxCalenderComponent) calender: NgxCalenderComponent;
+   @ViewChild('calender') private calender: ElementRef;
   // then you can access some public variables:
     currentDate: string;
     currentDay: string;
     currentMonth: string;
     currentYear: number; 
     
-    like:
+    eg:
     ngAfterViewInit() {
-        console.log(this.calender.currentYear);
+       console.log(this.calender['currentMonth']);
       }
   
   ```
