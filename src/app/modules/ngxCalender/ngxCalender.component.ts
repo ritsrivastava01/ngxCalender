@@ -6,10 +6,10 @@ import { format, subDays, getDaysInMonth, startOfMonth, getMonth, parse } from '
 
 @Component({
   selector: 'ng-calender',
-  templateUrl: './calender.component.html',
-  styleUrls: ['./calender.component.scss']
+  templateUrl: './ngxCalender.component.html',
+  styleUrls: ['./ngxCalender.component.scss']
 })
-export class CalenderComponent implements OnInit, AfterViewInit {
+export class NgxCalenderComponent implements OnInit, AfterViewInit {
 
   @Input() showHeader = true;
   @Output() clickedDate = new EventEmitter<Date>();

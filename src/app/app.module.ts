@@ -2,8 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { CalenderComponent } from './modules/calender/calender.component';
-import { CalenderModule } from './modules/calender/calender.module';
+import { NgxCalenderModule } from './modules/ngxCalender/ngxCalender.module';
+
+
 
 @NgModule({
   declarations: [
@@ -11,7 +12,7 @@ import { CalenderModule } from './modules/calender/calender.module';
   ],
   imports: [
     BrowserModule,
-    CalenderModule
+    NgxCalenderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

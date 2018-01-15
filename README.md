@@ -1,25 +1,25 @@
 
 
-# Angular based simple plug and play calender component
+# Angular based plug and play calender component
 
 ## Screenshot
 
 <div style="text-align:center"><img src ="https://github.com/ritsrivastava01/ngxCalender/blob/master/calender.PNG" /></div>
 
 ## Installation
-npm install ngx-Calender --save
+npm install ngx-calender --save
 
 ## Usage
 ###Import the calendar Module
 ```
   
-  import { CalenderModule } from 'ngx-Calender';
+  import { NgxCalenderModule } from './modules/ngxCalender/ngxCalender.module';;
   // other imports 
   
   @NgModule({
     imports: [
       // other imports 
-      CalenderModule
+      NgxCalenderModule
     ],
     // ...
   })
@@ -38,12 +38,18 @@ npm install ngx-Calender --save
 ### Access the variable from calender component
 ```
 
-  Access by it @viewChild() calender: ElementByRef;
+  Access it like:
+  @ViewChild(NgxCalenderComponent) calender: NgxCalenderComponent;
   // then you can access some public variables:
     currentDate: string;
     currentDay: string;
     currentMonth: string;
     currentYear: number; 
+    
+    like:
+    ngAfterViewInit() {
+        console.log(this.calender.currentYear);
+      }
   
   ```
  

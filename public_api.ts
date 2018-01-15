@@ -1,1 +1,1 @@
-export * from './src/app/modules/calender/calender.module';
+export * from './src/app/modules/ngxCalender/ngxCalender.module';
