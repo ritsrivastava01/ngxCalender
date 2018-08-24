@@ -15,10 +15,8 @@
   <tr *ngFor="let row of noOfRows let rowInd= index"  >
     <td *ngFor="let col of noOfColumn let colInd = index"  #tdCell
         (click)="clickHandler($event)">
-      {{getMonthDate(colInd, rowInd)}}
+    {{getMonthDate(colInd, rowInd)}}
     </td>
   </tr>
   </tbody>
 </table>
-
-

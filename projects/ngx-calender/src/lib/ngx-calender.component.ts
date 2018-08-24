@@ -1,13 +1,11 @@
-import {
-  Component, Input, OnInit, EventEmitter, Output, ViewChildren, ElementRef,
-  AfterViewInit, Renderer2
-} from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ViewChildren, Renderer2, AfterViewInit, ElementRef } from '@angular/core';
 import { format, subDays, getDaysInMonth, startOfMonth, getMonth, parse } from 'date-fns';
 
+
 @Component({
-  selector: 'ng-calender',
-  templateUrl: './calender.component.html',
-  styleUrls: ['./calender.component.scss']
+  selector: 'ngx-calender',
+  templateUrl: './ngx-calender.html',
+  styleUrls: ['./ngx-calender.scss']
 })
 export class NgxCalenderComponent implements OnInit, AfterViewInit {
 
@@ -16,8 +14,8 @@ export class NgxCalenderComponent implements OnInit, AfterViewInit {
   currentDate: string;
   currentMonth: string;
   currentYear: number;
-  protected noOfColumn: Array<number>;
-  protected noOfRows: Array<number>;
+  noOfColumn: Array<number>;
+  noOfRows: Array<number>;
   private currDaysInCurrMonth: number;
   private count: number;
   @ViewChildren('tdCell') private tdCollection;
@@ -25,9 +23,7 @@ export class NgxCalenderComponent implements OnInit, AfterViewInit {
   protected isCurrentDate: boolean;
   private clickedDateCell: HTMLElement;
 
-  constructor(private renderer: Renderer2) {
-
-  }
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit() {
     this.count = 0;
@@ -63,7 +59,7 @@ export class NgxCalenderComponent implements OnInit, AfterViewInit {
     }
   };
 
-  getDate: () => number = function () {
+  private getDate: () => number = function () {
     this.count++;
     return this.count;
   };
@@ -76,8 +72,9 @@ export class NgxCalenderComponent implements OnInit, AfterViewInit {
       }
       this.clickedDateCell = <HTMLElement>evt.currentTarget;
       this.renderer.addClass(this.clickedDateCell, 'highlightDateCell');
-      const date = parse(`${this.currentYear}-${this.currentMonth}-${this.currentDate}`);
+      const date = parse(`${this.currentYear}-${this.currentMonth}-${this.clickedDateCell.innerText}`);
       this.clickedDate.emit(date);
     }
   }
 }
+

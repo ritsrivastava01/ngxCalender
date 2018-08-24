@@ -1,0 +1,26 @@
+{
+  "name": "ngx-calender",
+  "version": "6.0.0",
+  "license": "MIT",
+  "author": "Ritesh Srivastava",
+  "description": "Angular 6+ based plug and play calender component",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ritsrivastava01/ngxCalender.git"
+  },
+  "homepage": "https://github.com/ritsrivastava01/ngxCalender",
+  "bugs": {
+    "url": "https://github.com/ritsrivastava01/ngxCalender"
+  },
+  "keywords": [
+    "ngx-calender",
+    "ng2 calender",
+    "angular Calender",
+    "angular 2 Calender"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "date-fns": "^1.29.0"
+  }
+}

@@ -2,7 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { CalenderModule } from './modules/calender/calender.module';
+import { NgxCalenderModule } from 'projects/ngx-calender/src/public_api';
+
+
+
+
 
 
 
@@ -12,7 +16,7 @@ import { CalenderModule } from './modules/calender/calender.module';
   ],
   imports: [
     BrowserModule,
-    CalenderModule
+    NgxCalenderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
