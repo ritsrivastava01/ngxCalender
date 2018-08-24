@@ -27,7 +27,7 @@ npm install ngx-calender --save
 ##Add selector in template file my-component.html
 ```
   
-  <ng-calender (clickedDate)="clickHandler()" ></ng-calender>
+<ngx-calender (clickedDate)="clickHandler()" ></ngx-calender>
   Where
   
   clickHandler: clicked handler on date and it return the clicked date as Date like:
