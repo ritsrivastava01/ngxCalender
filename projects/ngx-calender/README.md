@@ -1,16 +1,20 @@
 # Angular based plug and play calender component
 
 [![npm version](https://badge.fury.io/js/ngx-calender.svg)](https://badge.fury.io/js/ngx-calender)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/ritsrivastava01/ngxCalender)
+![GitHub stars](https://img.shields.io/github/stars/ritsrivastava01/ngxCalender)
+![GitHub License](https://img.shields.io/github/license/ritsrivastava01/ngxCalender)
 
 ## Screenshot
-
-<div style="text-align:center"><img src ="https://github.com/ritsrivastava01/ngxCalender/raw/master/calender.png" /></div>
+<p align="center">
+<img src ="https://github.com/ritsrivastava01/ngxCalender/raw/master/calender.PNG" />
+</p>
 
 ## Installation
 npm install ngx-calender --save
 
 ## Usage
-###Import the calendar Module
+### Import the calendar Module
 
 ```html
  import { NgxCalenderModule } from 'ngxCalender';
@@ -26,7 +30,7 @@ npm install ngx-calender --save
   export class AppModule {}
 
 ```
-##Add selector in template file my-component.html
+## Add selector in template file my-component.html
 
 ```html
   <ng-calender (clickedDate)="clickHandler()" ></ng-calender>
@@ -37,8 +41,8 @@ npm install ngx-calender --save
 
 ```
 ### Access the variable from calender component
-
 ```
+
   Access it like:
    @ViewChild('calender') private calender: NgxCalenderComponent;
   // then you can access some public variables:

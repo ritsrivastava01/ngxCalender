@@ -1,16 +1,22 @@
 # Angular based plug and play calender component
 
-## Screenshot
+[![npm version](https://badge.fury.io/js/ngx-calender.svg)](https://badge.fury.io/js/ngx-calender)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/ritsrivastava01/ngxCalender)
+![GitHub stars](https://img.shields.io/github/stars/ritsrivastava01/ngxCalender)
+![GitHub License](https://img.shields.io/github/license/ritsrivastava01/ngxCalender)
 
-<div style="text-align:center"><img src ="https://github.com/ritsrivastava01/ngxCalender/raw/master/calender.png" /></div>
+## Screenshot
+<p align="center">
+<img src ="https://github.com/ritsrivastava01/ngxCalender/raw/master/calender.PNG" />
+</p>
 
 ## Installation
 npm install ngx-calender --save
 
 ## Usage
-###Import the calendar Module
-```
-  
+### Import the calendar Module
+
+```html
  import { NgxCalenderModule } from 'ngxCalender';
   // other imports 
   
@@ -24,9 +30,9 @@ npm install ngx-calender --save
   export class AppModule {}
 
 ```
-##Add selector in template file my-component.html
-```
-  
+## Add selector in template file my-component.html
+
+```html
   <ng-calender (clickedDate)="clickHandler()" ></ng-calender>
   Where
   
