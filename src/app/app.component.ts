@@ -8,7 +8,7 @@ import { NgxCalenderComponent } from 'projects/ngx-calender/src/lib/ngx-calender
 })
 export class AppComponent {
   title = 'ngxCalender-app';
-  @ViewChild('calender') private calender: NgxCalenderComponent;
+  @ViewChild('calender', { static: true }) private calender: NgxCalenderComponent;
   
   
   clickedDate(evt) {
