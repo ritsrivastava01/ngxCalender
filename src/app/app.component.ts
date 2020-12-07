@@ -13,6 +13,6 @@ export class AppComponent {
   
   clickedDate(evt) {
   console.log(evt);
-  console.log(this.calender.currentDate, this.calender.clickedDate, this.calender.currentMonth, this.calender.currentYear);
+  console.log(this.calender.currentDate, this.calender.currentMonth, this.calender.currentYear);
   }
 }

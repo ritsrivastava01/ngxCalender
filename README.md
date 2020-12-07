@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-<div style="text-align:center"><img src ="https://github.com/ritsrivastava01/ngxCalender/raw/master/calender.PNG" /></div>
+<div style="text-align:center"><img src ="https://github.com/ritsrivastava01/ngxCalender/raw/master/calender.png" /></div>
 
 ## Installation
 npm install ngx-calender --save
@@ -31,7 +31,7 @@ npm install ngx-calender --save
   Where
   
   clickHandler: clicked handler on date and it return the clicked date as Date like:
-  eg: Wed Aug 01 2018 00:00:00 GMT+0200 (Central European Summer Time)
+  eg: Wed Dec 18 2020 00:00:00 GMT+0200 (Central European Summer Time)
 
 ```
 ### Access the variable from calender component

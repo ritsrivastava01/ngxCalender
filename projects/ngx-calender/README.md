@@ -1,16 +1,18 @@
 # Angular based plug and play calender component
 
+[![npm version](https://badge.fury.io/js/ngx-calender.svg)](https://badge.fury.io/js/ngx-calender)
+
 ## Screenshot
 
-<div style="text-align:center"><img src ="https://github.com/ritsrivastava01/ngxCalender/raw/master/calender.PNG" /></div>
+<div style="text-align:center"><img src ="https://github.com/ritsrivastava01/ngxCalender/raw/master/calender.png" /></div>
 
 ## Installation
 npm install ngx-calender --save
 
 ## Usage
 ###Import the calendar Module
-```
-  
+
+```html
  import { NgxCalenderModule } from 'ngxCalender';
   // other imports 
   
@@ -25,18 +27,18 @@ npm install ngx-calender --save
 
 ```
 ##Add selector in template file my-component.html
-```
-  
-<ngx-calender (clickedDate)="clickHandler()" ></ngx-calender>
+
+```html
+  <ng-calender (clickedDate)="clickHandler()" ></ng-calender>
   Where
   
   clickHandler: clicked handler on date and it return the clicked date as Date like:
-  eg: Wed Aug 01 2018 00:00:00 GMT+0200 (Central European Summer Time)
+  eg: Wed Dec 18 2020 00:00:00 GMT+0200 (Central European Summer Time)
 
 ```
 ### Access the variable from calender component
-```
 
+```
   Access it like:
    @ViewChild('calender') private calender: NgxCalenderComponent;
   // then you can access some public variables:
